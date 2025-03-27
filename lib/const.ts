@@ -595,7 +595,7 @@ export const examData: Array<examDataType> = [
   },
   {
     id: 36,
-    type: "MULTI_SELECT",
+    type: "MULTIPLE_SELECT",
     question:
       "Which of the following statements about data storage security are true?",
     options: [
@@ -622,7 +622,7 @@ export const examData: Array<examDataType> = [
   },
   {
     id: 37,
-    type: "MULTI_SELECT",
+    type: "MULTIPLE_SELECT",
     question: "What purpose can Object Storage Service (OBS) be used for?",
     options: [
       { id: "a", text: "Static website hosting" },
@@ -638,7 +638,7 @@ export const examData: Array<examDataType> = [
   },
   {
     id: 38,
-    type: "MULTI_SELECT",
+    type: "MULTIPLE_SELECT",
     question:
       "Which of the following services can you use after purchasing DevCloud?",
     options: [
@@ -653,7 +653,7 @@ export const examData: Array<examDataType> = [
   },
   {
     id: 39,
-    type: "MULTI_SELECT",
+    type: "MULTIPLE_SELECT",
     question: "What are the application scenarios for DevCloud?",
     options: [
       { id: "a", text: "Internet service providers (ISPs)" },
@@ -666,7 +666,7 @@ export const examData: Array<examDataType> = [
   },
   {
     id: 40,
-    type: "MULTI_SELECT",
+    type: "MULTIPLE_SELECT",
     question:
       "Which of the following image types are available on Huawei Cloud?",
     options: [
@@ -680,7 +680,7 @@ export const examData: Array<examDataType> = [
   },
   {
     id: 41,
-    type: "MULTI_SELECT",
+    type: "MULTIPLE_SELECT",
     question:
       "Which of the following must be specified when you purchase an ECS?",
     options: [
@@ -694,7 +694,7 @@ export const examData: Array<examDataType> = [
   },
   {
     id: 42,
-    type: "MULTI_SELECT",
+    type: "MULTIPLE_SELECT",
     question:
       "Which of the following are the advantages of Relational Database Service (RDS) over on-premise database?",
     options: [
@@ -712,7 +712,7 @@ export const examData: Array<examDataType> = [
   },
   {
     id: 43,
-    type: "MULTI_SELECT",
+    type: "MULTIPLE_SELECT",
     question:
       "Which of the following features should be considered when selecting a database service?",
     options: [
@@ -732,7 +732,7 @@ export const examData: Array<examDataType> = [
   },
   {
     id: 44,
-    type: "MULTI_SELECT",
+    type: "MULTIPLE_SELECT",
     question: "Which of the following are sources of application data?",
     options: [
       { id: "a", text: "Structured transaction data in database" },
@@ -751,7 +751,7 @@ export const examData: Array<examDataType> = [
   },
   {
     id: 45,
-    type: "MULTI_SELECT",
+    type: "MULTIPLE_SELECT",
     question:
       "Which of the following do you need to configure when you are using ELB?",
     options: [
@@ -765,7 +765,7 @@ export const examData: Array<examDataType> = [
   },
   {
     id: 46,
-    type: "MULTI_SELECT",
+    type: "MULTIPLE_SELECT",
     question:
       "Which of the following statements about VPC and subnet planning are true?",
     options: [
@@ -792,7 +792,7 @@ export const examData: Array<examDataType> = [
   },
   {
     id: 47,
-    type: "MULTI_SELECT",
+    type: "MULTIPLE_SELECT",
     question:
       "Which of the following do you need to configure when you buy an Elastic Cloud Server (ECS)?",
     options: [
@@ -806,7 +806,7 @@ export const examData: Array<examDataType> = [
   },
   {
     id: 48,
-    type: "MULTI_SELECT",
+    type: "MULTIPLE_SELECT",
     question:
       "Which of the following statements about services on Huawei Cloud are true?",
     options: [
@@ -833,7 +833,7 @@ export const examData: Array<examDataType> = [
   },
   {
     id: 49,
-    type: "MULTI_SELECT",
+    type: "MULTIPLE_SELECT",
     question:
       "Which of the following are Application Orchestration Service (AOS) best practices?",
     options: [
@@ -860,7 +860,7 @@ export const examData: Array<examDataType> = [
   },
   {
     id: 50,
-    type: "MULTI_SELECT",
+    type: "MULTIPLE_SELECT",
     question:
       "Which of the following information can be used by Identity and Access Management (IAM) to identify a visitor?",
     options: [
