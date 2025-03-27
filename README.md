@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Huawei Cloud Certification Exam Application
+
+## Overview
+
+This application is an interactive web-based testing platform designed for Huawei Cloud certification exams. It features a clean, user-friendly interface with a light and orange theme that enhances the exam-taking experience.
+
+## Features
+
+### Exam Interface
+
+- **Question Navigation**: Move through questions sequentially or jump to specific questions
+- **Progress Tracking**: Visual progress bar and question count display
+- **Timer**: Countdown clock showing remaining exam time
+- **Search Functionality**: Filter questions by ID or content
+- **Responsive Design**: Works on desktop and mobile devices
+
+### Question Types
+
+- **Single-select**: Traditional multiple choice questions with one correct answer
+- **Multi-select**: Questions requiring selection of multiple correct answers
+
+### Results System
+
+- **Automatic Scoring**: Instant calculation of results upon submission
+- **Score Review**: Detailed breakdown of correct and incorrect answers
+- **Explanations**: Access to explanations for each question
+- **Pass/Fail Indication**: Clear visual indication of exam outcome
+
+## Technical Details
+
+### Built With
+
+- React.js with TypeScript
+- Tailwind CSS for styling
+- Client-side state management
+
+### Application Structure
+
+- The app uses React Hooks for state management
+- Questions and answer data are stored in external configuration files
+- Timer functionality auto-submits when time expires
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js (v14.0 or higher)
+- NPM or Yarn package manager
+
+### Installation
+
+1. Clone the repository
+
+```
+git clone <repository-url>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Run the development server
 
-## Learn More
+```
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Configuration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The exam questions are configured in the `lib/const.js` file. You can modify:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Question content
+- Answer options
+- Correct answers
+- Explanations
+- Time limits
 
-## Deploy on Vercel
+## Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Start the exam by visiting the application URL
+2. Answer questions by selecting options (click radio buttons for single-select, checkboxes for multi-select)
+3. Navigate between questions using the Next/Previous buttons or the question navigator
+4. Submit the exam when finished or let the timer auto-submit
+5. Review your results and explanations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
