@@ -21,21 +21,6 @@ const ExamApp = () => {
       question.question.toLowerCase().includes(searchTerm.toLowerCase()) ||
       question.id.toString().includes(searchTerm)
   );
-
-  useEffect(() => {
-    // Timer countdown
-    if (!examSubmitted && timeLeft > 0) {
-      const timerInterval = setInterval(() => {
-        setTimeLeft((prevTime) => prevTime - 1);
-      }, 1000);
-
-      return () => clearInterval(timerInterval);
-    } else if (timeLeft === 0 && !examSubmitted) {
-      // Auto-submit exam when time runs out
-      handleSubmit();
-    }
-  }, [timeLeft, examSubmitted]);
-
   const handleAnswerChange = (
     questionId: number,
     selectedOption: string,
@@ -106,6 +91,20 @@ const ExamApp = () => {
     setExamSubmitted(true);
   };
 
+  useEffect(() => {
+    // Timer countdown
+    if (!examSubmitted && timeLeft > 0) {
+      const timerInterval = setInterval(() => {
+        setTimeLeft((prevTime) => prevTime - 1);
+      }, 1000);
+
+      return () => clearInterval(timerInterval);
+    } else if (timeLeft === 0 && !examSubmitted) {
+      // Auto-submit exam when time runs out
+      handleSubmit();
+    }
+  }, [timeLeft, examSubmitted, handleSubmit]);
+
   const resetExam = () => {
     setAnswers({});
     setCurrentQuestion(0);
@@ -171,7 +170,7 @@ const ExamApp = () => {
 
             {showAnswer && (
               <div className="space-y-6 mt-6">
-                {examData.map((question, index) => {
+                {examData.map((question) => {
                   const userAnswer = answers[question.id];
                   const isCorrect =
                     question.type === MULTIPLE_SELECT
